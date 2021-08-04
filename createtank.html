@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something Fishy</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+     
+<nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="index.html"><img src="./images/fish.png" class="fish">Something Fishy</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="index.html">My Tanks</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Fish Roster</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">History</a></li>
+            <a href="createtank.html"><li class="nav-item createtank">Create Tank</li></a>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <h1 class="text-center">Create Tank</h1>
+        <form>
+            <div class="form-group">
+                <label for="tankNameInput">Add Tank Name</label>
+                <input placeholder="Tank Name" type="text" class="form-control" name="tankname" id="tankNameInput"/>
+                <label for="tankSizeInput">What Size is Your Tank?</label>
+                <input type="number" id="tankSizeInput" class="form-control" name="tanksize" min="0" max="300"/>
+                <label for="tankDateCreated">When Did You Create this Tank?</label>
+                <input type="date" id="tankDateCreated" class="form-control" name="tankdate" />
+            </div>
+            <div class="form-group">
+                <h3>Fish</h3>
+                <label for="tankFishInput">Add Fish Type</label>
+                <input placeholder="Add Fish Type" type="text" class="form-control" name="tankfish" id="tankFishInput"/>
+                <label for="tankSizeInput">How Many?</label>
+                <input type="number" id="tankSizeInput" class="form-control" name="tanksize" min="0" max="300"/>
+                <button class="addFishButton">Add Fish</button>
+            </div>
+            <div class="form-group">
+                <h3>Setup</h3>
+                <label for="tankSubstrate">Add Substrate</label>
+                <input placeholder="Add Substrate Type" type="text" class="form-control" name="tanksubstrate" id="tankSubstrate"/>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="heaterCheck">
+                    <label class="form-check-label" for="heaterCheck">
+                      Do you have a heater?
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="filterCheck">
+                    <label class="form-check-label" for="filterCheck">
+                      Do you have a filter?
+                    </label>
+                </div>    
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create Tank" class="btn createtankform">
+            </div>
+        </form>
+      </div>
+    </div>
+</div>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>

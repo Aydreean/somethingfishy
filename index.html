@@ -11,11 +11,14 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
     <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet"> 
 </head>
 <body>
      
 <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Something Fishy</a>
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="index.html"><img src="./images/fish.png" class="fish">Something Fishy</a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,17 +34,84 @@
       <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
         <div class="sidebar-sticky pt-3">
           <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#">My Tanks</a></li>
+            <li class="nav-item"><a class="nav-link active" href="index.html">My Tanks</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Fish Roster</a></li>
             <li class="nav-item"><a class="nav-link" href="#">History</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Create Tank</a></li>
+            <a href="createtank.html"><li class="nav-item createtank">Create Tank</li></a>
           </ul>
         </div>
       </nav>
   
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-
-      </main>
+      <div class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <h1 class="text-center">My Tanks</h1>
+        <p class="text-right sortby">Sort By: </p>
+        <div class="form text-right">
+          <select class="form-select">
+            <option>Last Snapshot</option>
+            <option>Date (Early to Late)</option>
+            <option>Date (Late to Early)</option>
+            <option>Most Fish</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <a href="#">
+              <div class="card">
+                <img src="https://images.saymedia-content.com/.image/t_share/MTc0MTY2MDQwNzY5NDcxOTk2/how-to-get-the-community-right-in-your-community-aquarium.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Freshwater Community 2021</h5>
+                  <ul class="card-text">
+                    <li>Fish: 35</li>
+                    <li>Last Snapshot: 6/23/2021</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href='cichlids.html'>
+              <div class="card">
+                <img src="https://i.ytimg.com/vi/Kxambuz0ZtM/maxresdefault.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">African Cichlids 2021</h5>
+                  <ul class="card-text">
+                    <li>Fish: 27</li>
+                    <li>Last Snapshot: 6/23/2021</li>
+                  </ul>                
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#">
+              <div class="card">
+                <img src="https://www.dummies.com/wp-content/uploads/freshwater-aquariums.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Freshwater Downstairs 2021</h5>
+                  <ul class="card-text">
+                    <li>Fish: 13</li>
+                    <li>Last Snapshot: 6/23/2021</li>
+                  </ul>                
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-6">
+            <a href="#">
+              <div class="card">
+                <img src="https://external-preview.redd.it/G15WzJ98zZRTYslu3qF8LtUdMXHZSQiw1kptQcnfAxI.jpg?auto=webp&s=8bae94a494ebd17cf7ee97b0207fbd6551a2efe7" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Clawed Frog Tank</h5>
+                  <ul class="card-text">
+                    <li>Fish: 1</li>
+                    <li>Last Snapshot: 6/23/2021</li>
+                  </ul>                
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
       
