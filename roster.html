@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something Fishy</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+     
+<nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="index.html"><img src="./images/fish.png" class="fish">Something Fishy</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="#">Sign out</a>
+      </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <div class="sidebar-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="index.html">My Tanks</a></li>
+            <li class="nav-item active"><a class="nav-link" href="roster.html">Fish Roster</a></li>
+            <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+            <a href="createtank.html"><li class="nav-item createtank">Create Tank</li></a>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <h1 class="text-center">Fish Roster</h1>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Fish</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Aquarium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="cichlids.html">African Yellow Cichlid</a></td>
+              <td>4</td>
+              <td>African Cichlids 2021</td>
+            </tr>
+            <tr>
+              <td><a href="cichlids.html">Blood Orange Dart</a></td>
+              <td>6</td>
+              <td>African Cichlids 2021</td>
+            </tr>
+            <tr>
+              <td><a href="cichlids.html">Blue Tang</a></td>
+              <td>4</td>
+              <td>African Cichlids 2021</td>
+            </tr>
+            <tr>
+              <td><a href="cichlids.html">Canary Red</a></td>
+              <td>3</td>
+              <td>African Cichlids 2021</td>
+            </tr>
+            <tr>
+              <td>Livingstonii</td>
+              <td>7</td>
+              <td>African Cichlids 2021</td>
+            </tr>
+            <tr>
+              <td>Guppy</td>
+              <td>12</td>
+              <td>Freshwater Community 2021</td>
+            </tr>
+            <tr>
+              <td>Molly</td>
+              <td>12</td>
+              <td>Freshwater Community 2021</td>
+            </tr>
+            <tr>
+              <td>Neon Tetra</td>
+              <td>12</td>
+              <td>Freshwater Community 2021</td>
+            </tr>
+            <tr>
+              <td>Platy</td>
+              <td>12</td>
+              <td>Freshwater Community 2021</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="addFishButton">Edit Roster</button>
+      </div>
+    </div>
+</div>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
